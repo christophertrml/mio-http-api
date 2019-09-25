@@ -1,6 +1,6 @@
 pub struct ApiError {
-    code: String,
-    message: String
+    pub code: String,
+    pub message: String
 }
 
 impl ApiError {
