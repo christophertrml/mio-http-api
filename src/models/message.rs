@@ -1,6 +1,6 @@
 pub struct Message {
-    source_user_id: u64,
-    destination_user_id: u64,
-    timestamp: u64,
-    message: String
+    pub source_user_id: u64,
+    pub destination_user_id: u64,
+    pub timestamp: u64,
+    pub message: String
 }

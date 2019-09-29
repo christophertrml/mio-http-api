@@ -13,4 +13,11 @@ impl ApiError {
                 message: format!("A chat from user id '{}' to user id '{}' already exists, chat id: '{}' ", source_user_id, destination_user_id, existing_chat_id)
             }
     }
+
+    pub fn chat_does_not_exist(chat_id: u64) -> ApiError {
+        ApiError {
+            code: "chat_does_not_exist".to_string(),
+            message: format!("Chat with ID {} does not exist.", chat_id)
+        }
+    }
 }
